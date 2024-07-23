@@ -1,5 +1,3 @@
-Você está vendo a saída do comando `traceroute` para o domínio `rds.otimusclinic.com`, que resolve para o IP `200.225.54.41`. Vamos analisar cada parte da saída:
-
 ### Detalhes da Saída do `traceroute`
 
 ```plaintext
