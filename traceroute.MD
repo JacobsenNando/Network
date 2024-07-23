@@ -1,3 +1,36 @@
+Para realizar um teste de trace out (traceroute) para um domínio como `http://rds.otimusclinic.com/`, você pode seguir os passos abaixo. O traceroute permite que você veja o caminho que os pacotes de dados percorrem até chegar ao destino e pode ajudar a identificar onde pode haver problemas de rede.
+
+### Windows
+
+1. **Abrir o Prompt de Comando:**
+   - Pressione `Win + R`, digite `cmd` e pressione `Enter`.
+
+2. **Executar o comando `tracert`:**
+   - No prompt de comando, digite:
+     ```
+     tracert rds.otimusclinic.com
+     ```
+   - Pressione `Enter`.
+
+### macOS e Linux
+
+1. **Abrir o Terminal:**
+   - No macOS, você pode encontrar o Terminal em `Applications > Utilities > Terminal`.
+   - No Linux, você pode abrir o terminal dependendo do ambiente gráfico utilizado (geralmente com `Ctrl + Alt + T`).
+
+2. **Executar o comando `traceroute`:**
+   - No terminal, digite:
+     ```
+     traceroute rds.otimusclinic.com
+     ```
+   - Pressione `Enter`.
+
+### Analisando o Resultado
+
+O comando `tracert` (no Windows) ou `traceroute` (no macOS/Linux) vai listar cada salto que um pacote faz ao tentar alcançar o destino. Cada linha representa um roteador pelo qual o pacote passa, mostrando o tempo de resposta para cada salto. Se houver algum problema de rede, você pode ver um aumento significativo no tempo de resposta ou um "*" que indica perda de pacotes.
+
+Se precisar de mais ajuda para interpretar os resultados ou solucionar problemas específicos que encontrar, sinta-se à vontade para compartilhar os detalhes aqui.
+
 ### Detalhes da Saída do `traceroute`
 
 ```plaintext
