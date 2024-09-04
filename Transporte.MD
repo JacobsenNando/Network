@@ -30,7 +30,7 @@ Este documento fornece instruções para configurar um túnel EoIP e vincular a 
    add name=bridge1
    /interface bridge port
    add bridge=bridge1 interface=eoip-tunnel1
-   add bridge=bridge1 interface=ether1
+   add bridge=bridge1 interface= VLAN
    ```
 
 ### No Lado do Cliente
@@ -49,7 +49,7 @@ Este documento fornece instruções para configurar um túnel EoIP e vincular a 
    add name=bridge1
    /interface bridge port
    add bridge=bridge1 interface=eoip-tunnel1
-   add bridge=bridge1 interface=ether1
+   add bridge=bridge1 interface= PORT ou VLAN
    ```
 
 ## Configuração do Cliente PPPoE
@@ -64,7 +64,10 @@ Este documento fornece instruções para configurar um túnel EoIP e vincular a 
    ```
 
 ### Verificar o Voalle
+
 1.**Adicionar PPPoE do cliente e senha no voalle**
+
+2.**Vincular IP a conexão**
 
 ## Notas
 
@@ -72,13 +75,3 @@ Este documento fornece instruções para configurar um túnel EoIP e vincular a 
 - Verifique a conectividade entre o túnel EoIP e a comunicação PPPoE para garantir que estão funcionando corretamente.
 - Em caso de problemas, revise as configurações e certifique-se de que todas as interfaces estão configuradas corretamente.
 
-## Imagem
-
-Para mais detalhes, veja a imagem relacionada [aqui](#).
-
----
-
-Se houver alguma dúvida ou problema com a configuração, entre em contato com o suporte técnico.
-```
-
-Sinta-se à vontade para ajustar qualquer parte conforme necessário.
