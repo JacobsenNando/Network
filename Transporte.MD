@@ -1,6 +1,6 @@
 Aqui está um modelo de `README.md` para suas instruções de configuração:
 
-```markdown
+
 # Configuração de Túnel EoIP e PPPoE
 
 Este documento fornece instruções para configurar um túnel EoIP e vincular a uma porta Ether ou VLAN em uma bridge, bem como adicionar um cliente PPPoE na RB do cliente. Assegure-se de usar as pools de IPs 172.23.160.xx ou 172.23.161.xx e sempre utilizar /32 para transporte.
