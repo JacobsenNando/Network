@@ -40,4 +40,4 @@ O modelo OSI é uma estrutura de referência que define como diferentes sistemas
 
 #### Diagrama do Modelo OSI
 
-![Modelo OSI](camada-osi.jpg)
+![Modelo OSI](img/camada-osi.jpg)
