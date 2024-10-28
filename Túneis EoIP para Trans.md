@@ -54,4 +54,4 @@ No roteador do cliente (RB do outro lado), configure o cliente PPPoE para que el
 - Utilize endereços IP da pool `172.23.160.xx` ou `172.23.161.xx` para a configuração de IPs no túnel EoIP.
 - Sempre use máscara de sub-rede `/32` para o transporte, garantindo que o tráfego seja direcionado corretamente entre os túneis.
 
-![Tunnel EoIP](img/EoIP.jpg)
+![Tunnel EoIP](img/EoIP.png)
