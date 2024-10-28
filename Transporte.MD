@@ -1,5 +1,3 @@
-Aqui está um modelo de `README.md` para suas instruções de configuração:
-
 
 # Configuração de Túnel EoIP e PPPoE
 
