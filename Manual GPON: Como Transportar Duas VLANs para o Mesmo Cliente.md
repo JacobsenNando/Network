@@ -12,6 +12,8 @@ O primeiro passo é criar as VLANs 3579 e 243 na OLT, associando-as à porta de 
 
 Após criar as VLANs, prossiga para o próximo passo.
 
+
+![ConfigVlan](/img/VLAN_OLT.png)
 -----
 
 ### 2\. Criar GPON Line Profile
@@ -20,12 +22,16 @@ Configure um **Line Profile** que inclua ambas as VLANs no mesmo **T-CONT**, com
 
 Este **Line Profile** será posteriormente associado à ONU.
 
+
+![GPON Line Profile](/img/GponLineProfile.png)
 -----
 
 ### 3\. Provisionar ONU na OLT
 
 Localize a ONU na PON e realize o provisionamento, prestando atenção para selecionar o **Line Profile** configurado anteriormente.
 
+
+![Provisionamento](/img/Provisionamento.png)
 -----
 
 ### 4\. Adicionar Service Port (Encapsulamento de VLANs)
@@ -34,10 +40,16 @@ Localize a ONU na PON e realize o provisionamento, prestando atenção para sele
 
 Repita este processo para a VLAN 243, encapsulando-a também na VLAN 106. Ao final, tanto a VLAN 3579 quanto a 243 estarão encapsuladas na VLAN 106.
 
+
+![Encapsulamento](/img/Encapsulamento.png)
 -----
 
 ### 5\. Adicionar VLAN na Porta ETH (Desencapsulamento)
 
 Na porta ETH da ONU, adicione a VLAN de transporte (VLAN 106) e configure-a como `untagged`. Isso desencapsulará as VLANs 3579 e 243.
+
+
+![Untagged](/img/Untaged.png)
+
 
 Agora a conexão está completa\!
